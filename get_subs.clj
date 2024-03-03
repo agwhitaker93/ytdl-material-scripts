@@ -1,6 +1,6 @@
 #!/usr/bin/env bb
 
-(ns ytdl-material-scripts
+(ns get-subs
   (:require [babashka.http-client :as http]
             [clojure.java.io :as io]
             [cheshire.core :as json]
