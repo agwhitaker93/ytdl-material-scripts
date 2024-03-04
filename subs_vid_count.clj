@@ -21,6 +21,9 @@
   (map #(let [subscription (get %1 "subscription")
               files (get %1 "files")]
           {:name (get subscription "name")
+           :url (get subscription "url")
            :vid-count (count files)}) $)
+  ; get list of videos for subscription with yt-dlp --flat-playlist :url
+  ; compare count of videos from yt-dlp with vid-count
   (first $)
   (println $))
