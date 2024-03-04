@@ -1,4 +1,4 @@
-subs-list.edn
+*.edn
 .lsp
 .clj-kondo
 .envrc

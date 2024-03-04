@@ -12,5 +12,5 @@
 (as-> (str api-url "/getSubscriptions?apiKey=" api-key) $
   (http/post $ {:headers {"Accept" "application/json"}})
   (json/parse-string (:body $))
-  (with-open [out (io/writer "subs-list.edn")]
+  (with-open [out (io/writer "subs_list.edn")]
     (pprint $ out)))
